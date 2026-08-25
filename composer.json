@@ -1,7 +1,7 @@
 {
     "name": "moorl/forms-example",
     "description": "Form builder 2 | Example Add-On",
-    "version": "1.0.0",
+    "version": "1.7.0",
     "license": "proprietary",
     "authors": [
         {
@@ -9,9 +9,9 @@
         }
     ],
     "require": {
-        "shopware/core": "6.4.*",
-        "moorl/foundation": "1.4.*",
-        "moorl/forms": "*"
+        "shopware/core": "6.7.*",
+        "moorl/foundation": "1.7.*",
+        "moorl/forms": "2.7.*"
     },
     "type": "shopware-platform-plugin",
     "autoload": {
