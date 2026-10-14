@@ -1,0 +1,19 @@
+name: Release extension
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - '**'
+        paths:
+            - 'composer.json'
+jobs:
+    build:
+        if: contains(fromJSON(vars.RELEASE_BRANCHES), github.ref_name)
+        uses: moorl/github-actions/.github/workflows/release.yml@main
+        with:
+            extensionName: ${{ github.event.repository.name }}
+            publishShopwareStore: ${{ vars.PUBLISH_SHOPWARE_STORE }}
+        secrets:
+            accountClientId: ${{ secrets.SHOPWARE_CLI_ACCOUNT_CLIENT_ID }}
+            accountClientSecret: ${{ secrets.SHOPWARE_CLI_ACCOUNT_CLIENT_SECRET }}
+            ghToken: ${{ secrets.GITHUB_TOKEN }}
