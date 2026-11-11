@@ -95,4 +95,9 @@ Screenshotkandidaten sind derzeit nur als geplante Motive zu verstehen: Beispiel
 
 Die Anmeldung am lokalen Shopware-Admin 6.7.15.1 ist inzwischen erfolgreich. Dieses Plugin ist dort laut Pluginrepository nicht registriert und daher nicht als aktive Admin-Erweiterung verfügbar. Für dieses Add-on wurden keine Featureaufnahmen behauptet oder nachgebildet. Es wurde weder installiert noch aktiviert; die Quell-/Dokumentationsbefunde bleiben von der ausstehenden visuellen Abnahme getrennt.
 
-Der laufende Shop erlaubt derzeit die neuen Basis-/Order-Aufnahmen. Der konkrete Stand und die echten Bilder sind im Basisplugin in `docs/admin-screenshots.md`, `docs/admin-screenshots.json` und `docs/plugin-audit.md` festgehalten. Für die vollständige Add-on-Abnahme ist eine entsprechend eingerichtete Testumgebung erforderlich; der Login ist kein Hindernis mehr.
+Der laufende Shop erlaubt derzeit die neuen Basis-/Order-Aufnahmen. Der konkrete Stand ist in `../MoorlForms/CODEX.md` und `../MoorlForms/docs/admin-screenshots.json` festgehalten; die Bilder sind direkt in den bestehenden Basis-/Order-Handbüchern eingebunden. Für die vollständige Add-on-Abnahme ist eine entsprechend eingerichtete Testumgebung erforderlich; der Login ist kein Hindernis mehr.
+
+
+## Dokumentationsstruktur ab 11.11.2026
+
+Neue englische FHD-Aufnahmen liegen flach unter `docs/images/` in Basis und Order und werden in DE/EN gemeinsam verwendet. Nicht passende historische Abbildungen sind entfernt; für nicht aktive Add-ons werden keine fremden Basisansichten als Funktionsnachweis ausgegeben. Fachanleitungen und Feature-Übersicht bleiben in den bestehenden Seiten. Interne Seitenverweise der öffentlichen Doku verwenden sprachabhängige URLs unter `https://docs.moori.net/plugin/` bzw. `/en/plugin/`; `.en.md` ist ein Quellname und kein öffentliches Linkziel. Bilder und Downloadbeispiele bleiben lokale Assets.
